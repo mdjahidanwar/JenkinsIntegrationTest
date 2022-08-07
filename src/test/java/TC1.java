@@ -22,7 +22,7 @@ public class TC1 {
     @Test
     public void test1() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(uri);
+        driver.get("http://google.com");
         driver.manage().window().fullscreen();
         String title = driver.getTitle();
         Assert.assertEquals(title, "Sign in [Jenkins]");
